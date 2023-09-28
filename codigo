@@ -103,6 +103,5 @@ int main()
 
     printf("Transferências concluídas e memória liberada.\n");
     return 0;
-}
-
+}O
 # Projeto_SO
