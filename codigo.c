@@ -9,7 +9,6 @@
 #include <pthread.h> // Adicionamos a biblioteca pthread para usar mutex
 #include <time.h>    // Adicionamos a biblioteca time para inicializar a semente aleatória
 
-// 64kB stack
 #define FIBER_STACK (1024 * 64)
 
 struct c {
@@ -20,10 +19,8 @@ typedef struct c conta;
 conta contas[2]; // Alteramos para um array de contas
 int valor;
 
-// Mutex para controlar o acesso às contas
 pthread_mutex_t mutex;
 
-// Função de transferência
 void* transferencia(void* arg)
 {
     int i;
@@ -108,4 +105,5 @@ int main()
 
 
 
+# Projeto_SO
 # Projeto_SO
